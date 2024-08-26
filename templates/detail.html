@@ -1,0 +1,17 @@
+
+{% include 'include/nav.html' %}
+{% block title %}
+    {{ object.text }}
+{% endblock title %}
+
+{% block body %}
+<div class="row">
+    <div class="col-sm10 offset-sm1 py-5">
+        <h4>{{ object.text }}</h4>
+        <br>
+        <h1>Image</h1>
+        <img src="{{ object.image.url }}" class="img-fluid rounder">
+        {% endblock body %}
+    </div>
+</div>
+
